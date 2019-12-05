@@ -11,6 +11,5 @@ request(url, (error, response, body) => {
   const data = JSON.parse(body);
   if (data.length === 0) {
     console.log("Error, breed not found")
-  } else console.log(`The description of ${breedName} is: ${data[0].description}`);
-
-})
+  } else console.log(`The description for ${breedName} is: ${data[0].description}`);
+});
